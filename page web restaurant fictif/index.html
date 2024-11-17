@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dîner Élégant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+          <a class="navbar-brand" href="#">Dîner Élégant</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">À propos de nous</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" style="background-image: url('https://cdn.pixabay.com/photo/2017/02/14/17/23/united-kingdom-2066475_1280.jpg'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="container text-center text-white d-flex justify-content-center align-items-center" style="height: 100%;">
+            <div>
+                <h1 class="display-4">Bienvenue au Restaurant Gourmet</h1>
+                <a href="#menu" class="btn btn-primary btn-lg">Découvrez notre menu</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="menu-section py-5" id="menu">
+        <div class="container">
+            <h2 class="text-center mb-4">Notre Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/27/08/41/pizza-2446700_1280.jpg" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Margherita</h5>
+                            <p class="card-text">Une pizza traditionnelle avec des tomates fraîches, du fromage mozzarella et du basilic.</p>
+                            <p><strong>Prix: 15€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2021/12/09/20/46/burger-6859072_1280.jpg" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger Gourmet</h5>
+                            <p class="card-text">Un burger juteux avec du bacon, du fromage fondant et des légumes frais.</p>
+                            <p><strong>Prix: 12€</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_1280.jpg" class="card-img-top" alt="Dessert">
+                        <div class="card-body">
+                            <h5 class="card-title">Gâteau au Chocolat</h5>
+                            <p class="card-text">Un gâteau au chocolat fondant avec une garniture de crème chantilly.</p>
+                            <p><strong>Prix: 7€</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="about-us-section py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://cdn.pixabay.com/photo/2016/02/10/13/39/hotel-1191725_1280.jpg" class="img-fluid" alt="About Us">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor risus eu purus tincidunt, in lacinia sem malesuada.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+    <section class="contact-section py-5">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Contactez-nous</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Nom</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Votre email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="4" placeholder="Votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+          <p>&copy; 2024 Nom du Restaurant. Tous droits réservés.</p>
+          <div>
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+    </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
